@@ -3,11 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Login </title>
-    <link rel="stylesheet" type="text/css" href="../CSS/estiloL.css">
+    <link rel="stylesheet" href="../CSS/estiloL.css">
+    <title>Document</title>
 </head>
 <body>
-    <div>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <span>Livraria RELATIVE</span>
+                </div>
+                <ul>
+                    <li><a href="Livraria Relative.html">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#categorias">Categorias</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <input type="text" class="search-input" id="searchInput" placeholder="Pesquisar" oninput="filterBooks()">
+            <button class="search-button" onclick="filterBooks()"><img src="../CSS/Seta certa.png" alt="qualquer coisa" width="50px" height="16px"></button>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="login">
         <h1>Login</h1>
 
         <input type="text" class="usuario-u"       placeholder=usuario>
@@ -16,5 +33,7 @@
         <br><br>
         <button>Acessar</button>
     </div>
+   
+
 </body>
 </html>

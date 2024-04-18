@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=2.0">
     <title>LIVRARIAS RELATIVE</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />"
     <link rel="stylesheet" type="text/css" href="../CSS/estilo.css">
 </head>
 <body>
@@ -14,9 +15,18 @@
                     <span>Livraria RELATIVE</span>
                 </div>
                 <ul>
-                    <li><a href="#livros">Home</a></li>
-                    <li><a href="#login">Login</a></li>
-                    <li><a href="#categorias">Categorias</a></li>
+                    <li><a href="Livraria Relative.html">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li class="dropdown">
+                    <a href="#categorias">Categorias</a>
+                    <div class="dropdown-menu">
+                        <a href="">Ficção Cientifica</a>
+                        <a href="">Fantasia</a>
+                        <a href="">Terror</a>
+                        <a href="">Infanto-Juvenil</a>
+                    </div>
+                    </li>
+</li>
                     <li><a href="#contato">Contato</a></li>
                     <input type="text" class="search-input" id="searchInput" placeholder="Pesquisar" oninput="filterBooks()">
             <button class="search-button" onclick="filterBooks()"><img src="../CSS/Seta certa.png" alt="qualquer coisa" width="50px" height="16px"></button>
@@ -36,44 +46,43 @@
         <button class="finalize-button" onclick="toggleCheckout()">Finalizar Compra</button>
         <button class="finalize-button" onclick="clearCart()">Limpar Carrinho</button>
     </div>
-    
         <div id="livros">
             <!-- Detalhes dos livros -->
             <!-- Exemplo de livro: -->
-            <div class="livro" data-title="O Senhor dos Anéis" data-author="J.R.R. Tolkien" data-price="39.99">
+            <div class="livro" data-title="O Senhor dos Anéis" data-author="J.R.R. Tolkien" data-price="46.54">
                 <img src="../CSS/sociedade do anel.jpg" alt="O Senhor dos Anéis" height="300px" width="200px">
                 <h3>O Senhor dos Anéis</h3>
                 <p>J.R.R. Tolkien</p>
                 <p>Tamanho: 576 páginas</p>
                 <p>⭐⭐⭐⭐⭐</p>
-                <p>R$ 39,99</p>
+                <p>R$ 46,54</p>
                 <button class="add-to-cart" data-price="39.99">Adicionar ao Carrinho</button>
             </div>
             <!-- Adicionando os outros livros -->
-            <div class="livro" data-title="O Senhor dos Anéis - Livro 2" data-author="J.R.R. Tolkien" data-price="39.99">
+            <div class="livro" data-title="O Senhor dos Anéis - Livro 2" data-author="J.R.R. Tolkien" data-price="52.43">
                 <img src="../CSS/senhor 2.jpg   " alt="O Senhor dos Anéis - Livro 2" height="300px" width="200px">
                 <h3>O Senhor dos Anéis - Livro 2</h3>
                 <p>J.R.R. Tolkien</p>
                 <p>Tamanho: 300 páginas</p>
-                <p>R$ 39,99</p>
+                <p>R$ 52,43</p>
                 <p>⭐⭐⭐⭐⭐</p>
                 <button class="add-to-cart" data-price="39.99">Adicionar ao Carrinho</button>
             </div>
-            <div class="livro" data-title="O Senhor dos Anéis - Livro 3" data-author="J.R.R. Tolkien" data-price="39.99">
+            <div class="livro" data-title="O Senhor dos Anéis - Livro 3" data-author="J.R.R. Tolkien" data-price="52.43">
                 <img src="../CSS/o-retorno.jpg" alt="O Senhor dos Anéis - Livro 3" height="300px" width="200px">
                 <h3>O Senhor dos Anéis - Livro 3</h3>
                 <p>J.R.R. Tolkien</p>
                 <p>Tamanho: 350 páginas</p>
-                <p>R$ 39,99</p>
+                <p>R$ 52,43</p>
                 <p>⭐⭐⭐⭐⭐</p>
                 <button class="add-to-cart" data-price="39.99">Adicionar ao Carrinho</button>
             </div>
-            <div class="livro" data-title="O Hobbit" data-author="J.R.R. Tolkien" data-price="29.99">
+            <div class="livro" data-title="O Hobbit" data-author="J.R.R. Tolkien" data-price="39.83">
                 <img src="../CSS/hobbit.jpg" alt="O Hobbit" height="300px" width="200px">
                 <h3>O Hobbit</h3>
                 <p>J.R.R. Tolkien</p>
                 <p>Tamanho: 250 páginas</p>
-                <p>R$ 39,99</p>
+                <p>R$ 39,83</p>
                 <p>⭐⭐⭐⭐⭐</p>
                 <button class="add-to-cart" data-price="29.99">Adicionar ao Carrinho</button>
             </div>
@@ -95,14 +104,14 @@
                 <button class="add-to-cart" data-price="24.99">Adicionar ao Carrinho</button>
             </div>
             <div class="livro" data-title="Os Filhos de Húrin" data-author="J.R.R. Tolkien" data-price="29.99">
-                <img src="filhos_hurin.jpg" alt="Os Filhos de Húrin">
+                <img src="../CSS/os filhos de huriun.jpg" alt="Os Filhos de Húrin" height="300px" width="200px">
                 <h3>Os Filhos de Húrin</h3>
                 <p>J.R.R. Tolkien</p>
                 <p>⭐⭐⭐⭐⭐</p>
                 <button class="add-to-cart" data-price="29.99">Adicionar ao Carrinho</button>
             </div>
             <div class="livro" data-title="Beren e Lúthien" data-author="J.R.R. Tolkien" data-price="27.99">
-                <img src="beren_luthien.jpg" alt="Beren e Lúthien">
+                <img src="../CSS/beren e luthien.jpg" alt="Beren e Lúthien" height="300px" width="200px">
                 <h3>Beren e Lúthien</h3>
                 <p>J.R.R. Tolkien</p>
                 <p>⭐⭐⭐⭐</p>
@@ -123,17 +132,7 @@
 
     <script>
         
-        document.querySelectorAll('nav a').forEach(function(link) {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelectorAll('.container > div').forEach(function(tab) {
-                    tab.style.display = 'none';
-                });
-                var target = this.getAttribute('href');
-                document.querySelector(target).style.display = 'block';
-            });
-        });
-
+      
         
         var cartItems = [];
         var total = 0;
@@ -252,23 +251,7 @@
 
     <script>
         
-        var loggedIn = false;
-
-        
-        function login() {
-            var email = document.getElementById('loginEmail').value;
-            var password = document.getElementById('loginPassword').value;
-
-            if (email === 'usuario@example.com' && password === 'senha') {
-                loggedIn = true;
-                alert('Login realizado com sucesso!');
-                
-                window.location.href = 'index.html';
-            } else {
-                alert('Email ou senha incorretos. Por favor, tente novamente.');
-            }
-        }
-
+       
       
         function rateBook(star, rating) {
             if (!loggedIn) {
@@ -339,10 +322,44 @@
     <p>Ainda não tem uma conta? <a href="#signup">Cadastre-se aqui</a></p>
 </div>
 </div>
-
-<script>
-var loggedIn = false;
-
 </script>
+<footer>
+    <div class="container">
+        <ul>
+            <h3>Livraria Relative</h3>
+            <p>Travel to a Magic World!</p>
+            <div class="redes-sociais">
+                <img src="../CSS/instagram-logo-24.png" alt="instagram">
+                <img src="../CSS/twitter-logo-24.png" alt="twitter">
+                <img src="../CSS/youtube-logo-24.png" alt="youtube">
+            </div>
+        </ul>
+        
+        <ul>
+            <h3>Link</h3>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+        </ul>
+        <ul>
+            <h3>Suporte</h3>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Entre em contato</a></li>
+            <li><a href="#">Como Funciona</a></li>
+            <li><a href="#">Brasil</a></li>
+        </ul>
+        <ul>
+            <h3>Contatos</h3>
+            <li><a href="#">Trabalhe conosco</a></li>
+            <li><a href="#">Email</a></li>
+            <li><a href="#">Whatsapp</a></li>
+        </ul>
+        <div class="footer_copyright">
+            &#169
+            2024 Todos os Direitos Reservados
+        </div>
+    </div>
+    
+</footer>
 </body>
 </html>

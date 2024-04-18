@@ -1,39 +1,90 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-image:linear-gradient(45deg, cyan,purple);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body {
+    
     background-image: url(../CSS/library-8026619_1280.webp);
     background-position: center top;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     height: auto0;
     width: auto;
 }
-    div{
-background-color: rgba(0, 0, 0, 0.6);
-position:absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-padding: 80px;
-border-radius: 15px;
-color: white;
-text-align: center;
-    }
-           input{
-            padding: 15px;
-            border: none;
-            outline: none;
-            font-size: 15px;
-        }
-        button{
-           backdrop-filter: blur(15px);
-            border:solid 1px;
-            padding: 15px;
-            width: 100%;
-            border-radius: 12px;
-            color: white;
-            backdrop-filter: blur(10px);
-            background: none;
-        }
-            .usuario-u{border-radius: 15px;}
-            .senha-u{border-radius: 15px;}
+.container{
+    max-width: 1400px;
+    padding: 3%;
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo{
+    font-size: 35px;
+    font-style: italic;
+    color: white;
+    font-weight: bold;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 30px;
+    transition: 0.6s;
+}
+nav ul li a:hover{
+    background-color: black;
+}   
+input{
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 15px;
+}
+.search-bar {
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    
+
+}
+.search-input {
+    padding: 10px;
+    border: 1px solid white; /* Marrom escuro */
+    border-radius: 15px;
+    font-size: 16px;
+    backdrop-filter: blur(10px);
+}
+.search-button {
+    background: none;
+    padding: 10px 0px;
+    margin-left: 0px;
+    cursor: pointer;
+    position: relative;
+    border: solid 1px;
+    border-radius: 15px;
+    background-color: #faf0e6;
+}
+.login{
+    text-align: center;
+}
+input{
+    padding: 15px;
+    border: none;
+    outline: none;
+    
+}
+    .usuario-u{border-radius: 15px;}
+    .senha-u{border-radius: 15px;}
